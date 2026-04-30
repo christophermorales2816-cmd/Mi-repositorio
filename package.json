@@ -1,0 +1,14 @@
+{
+  "name": "clima-cr",
+  "version": "1.0.0",
+  "description": "Clima CR - Extensión de Chrome para Costa Rica",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "dev": "node src/build.mjs --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.11",
+    "typescript": "^6.0.3"
+  }
+}

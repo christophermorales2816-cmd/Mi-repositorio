@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clima CR</title>
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg" /> 
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+  <body>
+    <div id="app">
+
+      <!-- ── Header: título + reloj ────────────────────────── -->
+      <header class="app-header">
+        <div class="header-left">
+          <div class="app-title">🇨🇷 Clima CR</div>
+          <div id="date" class="app-date">Cargando fecha…</div>
+        </div>
+        <div class="clock-container">
+          <div id="clock" class="clock">--:--:--</div>
+          <div class="clock-sub">Costa Rica</div>
+        </div>
+      </header>
+
+      <!-- ── Contenedor dinámico de vistas ─────────────────── -->
+      <!-- popup.ts inyecta aquí: menú | detalle | loading | error -->
+      <main id="view-container" role="main"></main>
+
+    </div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
