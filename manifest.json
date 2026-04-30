@@ -2,23 +2,28 @@
   "manifest_version": 3,
   "name": "Clima CR — Provincias de Costa Rica",
   "version": "1.0.0",
-  "description": "Pronóstico para las 7 provincias de Costa Rica.",
+  "description": "Pronóstico del día actual para las 7 provincias de Costa Rica. Se actualiza cada 30 minutos y reinicia a medianoche.",
+
   "permissions": [
     "storage",
     "alarms"
   ],
+
   "host_permissions": [
     "https://api.open-meteo.com/*"
   ],
+
   "action": {
     "default_popup": "popup.html",
     "default_title": "Clima CR",
     "default_icon": "icons/icon.svg"
   },
+
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
+
   "icons": {
     "128": "icons/icon.svg"
   }
